@@ -1,4 +1,4 @@
-resource "aws_instance" "Ajay" {
+resource "aws_instance" "Meet" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_name
@@ -56,6 +56,6 @@ resource "aws_security_group" "ec2_security_group" {
   }
 
   tags = {
-    Name = "Aj_sg"
+    Name = "Me_Kh"
   }
 }
