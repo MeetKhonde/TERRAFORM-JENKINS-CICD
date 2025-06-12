@@ -9,7 +9,7 @@ resource "aws_instance" "Meet" {
   }
 }
 
-resource "aws_security_group" "ec2_security_group" {
+resource "aws_security_group" "ec2_security_group1" {
   name        = "ec2 security group"
   description = "allow access on ports 80 and 22 and 443"
 
