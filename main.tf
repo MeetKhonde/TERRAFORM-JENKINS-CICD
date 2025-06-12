@@ -2,7 +2,7 @@ resource "aws_instance" "Meet" {
   ami                    = var.ami_id
   instance_type          = var.instance_type
   key_name               = var.key_name
-  vpc_security_group_ids = [aws_security_group.ec2_security_group.id]
+  vpc_security_group_ids = [aws_security_group.ec2_security_group1.id]
   user_data              = base64encode(file("website.sh"))
   tags = {
     Name = "project3"
